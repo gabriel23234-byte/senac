@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #12364a;
+      --ocean: #057e9f;
+      --foam: #e6f8f7;
+      --coral: #ef765d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #c8f1f4 0%, #dff8f4 32%, #fff2d1 32.1%, #fff8e9 100%);
+    }
+
+    .page-shell {
+      width: min(100% - 2rem, 680px);
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #075d78;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link:hover { color: var(--coral); }
+
+    #quiz-container { min-height: 260px; }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <a class="back-link" href="quiz.html">&larr; Back to my journey</a>
+    <div id="quiz-container"></div>
+  </main>
+  <script src="quiz_2.js"></script>
+</body>
+</html>
